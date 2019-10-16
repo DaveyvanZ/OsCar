@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRouteListItem" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnListRoute"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/route_button"
+            android:fontFamily="sans-serif"
+            android:text="21 december, 2019"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/ivMap"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/map_iv"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_launcher" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/ivExtraDetail"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+    </FrameLayout>
+
+</RelativeLayout>

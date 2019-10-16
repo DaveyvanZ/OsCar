@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivSideBar"
+        android:layout_width="10dp"
+        android:layout_height="130dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/rit_details_sidebar_a" />
+
+    <TextView
+        android:id="@+id/tvMedewerkerNaam"
+        android:layout_width="50dp"
+        android:layout_height="130dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Luuk van Jole"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvMedewerkerAdres"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:fontFamily="sans-serif"
+        android:text="Stevinstraat 18, 2984 GD Ridderkerk"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+</TableRow>

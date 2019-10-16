@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toTopOf="@+id/routebegeleidingBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                app:layout_constraintBottom_toTopOf="@+id/backToRitBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/rit_details_sidebar_a" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="130dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Luuk van Jole"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Rembrandtgalerij 109, 4703 GX Roosendaal, Netherlands"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/rit_details_sidebar_a" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="130dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Luuk van Jole"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Rembrandtgalerij 109, 4703 GX Roosendaal, Netherlands"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/rit_details_sidebar_b" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="130dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Luuk van Jole"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Rembrandtgalerij 109, 4703 GX Roosendaal, Netherlands"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </TableRow>
+                -->
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/routebegeleidingBtn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/neotericbold"
+        android:text="Routebegeleiding"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/backToRitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backToRitBtn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/neotericbold"
+        android:text="@string/terug"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
